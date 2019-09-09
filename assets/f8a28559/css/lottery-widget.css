@@ -1,0 +1,125 @@
+/*present*/
+.present {
+  position: fixed;
+  width: 100%;
+  max-width: 450px;
+  height: 400px;
+  background: url(../img/lottery/lottery-single.png) no-repeat center;
+  background-size: 100%;
+  z-index: 1000;
+  left: -350px;
+  transition: 0.3s;
+  top: 10%;
+}
+.present.battle {
+  background: url(../img/lottery/lottery-battle.png) no-repeat center;
+}
+.hover:hover {
+  left: 0;
+}
+.hover {
+  animation-name: present;
+  animation-iteration-count: 1;
+  animation-duration: 0.3s;
+}
+@keyframes present {
+  from {
+    left: -350px;
+  }
+  to {
+    left: 0;
+  }
+}
+.unhover {
+  animation-name: presentun;
+  animation-iteration-count: 1;
+  animation-duration: 0.3s;
+}
+@keyframes presentun {
+  from {
+    left: 0;
+  }
+  to {
+    left: -350px;
+  }
+}
+/*present*/
+@media screen and (max-width: 450px) {
+  .present {
+    left: -80%;
+    height: 250px;
+  }
+  @keyframes present {
+    from {
+      left: -80%;
+    }
+    to {
+      left: 0;
+    }
+  }
+  @keyframes presentun {
+    from {
+      left: 0;
+    }
+    to {
+      left: -80%;
+    }
+  }
+}
+/* Battle Lottery banner */
+.lottery-battle-banner {
+  position: fixed;
+  z-index: 101;
+  background-size: 100%;
+}
+.lottery-battle-banner.pc {
+  top: 20%;
+  background: url(../img/lottery/lottery-battle-pc.png) no-repeat center;
+  width: 300px;
+  height: 385px;
+  display: inline-block;
+  transform: translateX(-250px);
+}
+.lottery-battle-banner.mobile {
+  left: 50%;
+  width: 320px;
+  height: 155px;
+  margin-left: -160px;
+}
+.lottery-battle-banner.pc.banner-hover,
+.lottery-battle-banner.pc.banner-unhover,
+.lottery-battle-banner.mobile.banner-hover,
+.lottery-battle-banner.mobile.banner-unhover {
+  animation-iteration-count: 1;
+  animation-duration: 0.3s;
+}
+.lottery-battle-banner.pc.banner-hover {
+  transform: translateX(0);
+  animation-name: animate-pc-hover;
+}
+.lottery-battle-banner.pc.banner-unhover {
+  transform: translateX(-250px);
+  animation-name: animate-pc-unhover;
+}
+.lottery-battle-banner.mobile.banner-hover {
+  animation-name: animate-mobile-hover;
+}
+.lottery-battle-banner.mobile.banner-unhover {
+  animation-name: animate-mobile-unhover;
+}
+@keyframes animate-pc-hover {
+  from { transform: translateX(-250px); }
+  to { transform: translateX(0); }
+}
+@keyframes animate-pc-unhover {
+  from { transform: translateX(0); }
+  to { transform: translateX(-250px); }
+}
+@keyframes animate-mobile-hover {
+  from { top: -130px; }
+  to { top: 0; }
+}
+@keyframes animate-mobile-unhover {
+  from { top: 0; }
+  to { top: -130px; }
+}

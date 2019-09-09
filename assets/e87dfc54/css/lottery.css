@@ -1,0 +1,852 @@
+body {
+  background: white;
+  font-family: PlayRegular, sans-serif;
+  overflow-x: hidden;
+}
+.footer {
+  background: white;
+  box-shadow: 0 -5px 5px #d8d8d8;
+}
+.header {
+  box-shadow: 0 5px 5px #d8d8d8;
+}
+#logo {
+  height: 76px;
+  padding-top: 10px;
+}
+.header-refill-balance {
+  margin-top: 10px;
+}
+header {
+  position: relative;
+  z-index: 1000;
+}
+.screen1 h1, .screen1 h2 {
+  font-size: 35px !important;
+  font-weight: 600;
+  padding: 0 5px;
+}
+.screen1 h4 {
+  font-size: 24px !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+.screen1 h1:before, .screen1 h2:before {
+  content: url(../images/leftarrow.png);
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: -10px;
+  left: 10px;
+}
+.phow {
+  font-size: 20px;
+  line-height: 25px;
+  margin-top: 30px;
+  color: #777777;
+  font-weight: 400;
+}
+.screen1 h1:after, .screen1 h2:after {
+  content: url(../images/rightarrow.png);
+  width: 30px;
+  height: 30px;
+  position: relative;
+  transform: rotate(180deg);
+  top: 15px;
+  right: 10px;
+}
+.blue {
+  color: #00b1e2;
+}
+.screen1, .screen-rozigrish {
+  padding: 20px 0;
+  background: url(../images/bg1.jpg) no-repeat center;
+  background-size: cover;
+}
+.timer {
+  color: white;
+  font-family: "PlayRegular", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  background: #09afdf;
+  width: 70%;
+  margin: auto;
+  padding: 5px 0;
+}
+.bef:before {
+  content: ':';
+  width: 3px;
+  height: 20px;
+  color: white;
+  font-family: PlayRegular;
+  font-weight: 600;
+  font-size: 40px;
+  position: relative;
+  margin-right: 7px;
+}
+.saleinfo {
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+/*what game is better*/
+.game-wrap {
+  width: 48%;
+  margin: auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px #a0aed0;
+  position: relative;
+  z-index: 100;
+}
+.img-inner {
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px 10px 0 0;
+}
+.img-inner img {
+  height: 100%;
+  width: auto;
+  max-width: none;
+}
+.game-name {
+  text-align: center;
+  font-size: 1.5vw;
+  font-weight: 600;
+}
+.game-name p {
+  margin: 5px 0;
+}
+.game-price, .how-it .button-ok {
+  width: 70px;
+  border-radius: 5px;
+  height: 30px;
+  color: white;
+  font-size: 16px;
+  background: #8de314;
+  position: absolute;
+  top: 160px;
+  left: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 5px #78c111;
+}
+input[name="promocode"] {
+  width: 90%;
+  border-radius: 5px;
+  border: 1px solid #09afdf;
+  padding: 7px;
+  font-style: italic;
+}
+.game-wrap button, .how-it-button {
+  width: 85%;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  background: #09afdf;
+  border-radius: 5px;
+  position: relative;
+  border: none;
+  height: 45px;
+  top: 18px;
+  box-shadow: 0 4px 10px #0786a9;
+}
+.vs-row.active {
+  margin-top: 10px;
+}
+.vs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 30px;
+  font-weight: 600;
+}
+.active-lottery.vs {
+  margin-top: 15px;
+}
+.left-info {
+  width: 80%;
+  height: 70px;
+  background: white;
+  background: url(../images/left.png) no-repeat center;
+  background-size: 100%;
+  position: absolute;
+  top: 65px;
+  right: -40%;
+  padding-left: 45px;
+  padding-right: 25px;
+}
+.right-info {
+  width: 80%;
+  height: 70px;
+  background: white;
+  background: url(../images/right.png) no-repeat center;
+  background-size: 100%;
+  position: absolute;
+  bottom: 65px;
+  left: -40%;
+  padding-right: 55px;
+  padding-left: 25px;
+}
+.stavok {
+  transform: rotate(-90deg) !important;
+  width: 70px;
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 7px;
+  position: relative;
+  top: 12px;
+}
+.right-info .stavok {
+  float: right;
+}
+.left-info .stavok {
+  float: left;
+}
+.left-info .stavki-count {
+  font-size: 40px;
+  color: #09afdf;
+  font-weight: 600;
+  position: relative;
+  top: 5px;
+  left: -20px;
+  float: left;
+}
+.left-info .game-name {
+  font-size: 20px;
+  float: right;
+  display: flex;
+  align-items: center;
+  height: 70px;
+  max-width: 50%;
+  text-align: right;
+}
+.right-info .stavki-count {
+  font-size: 40px;
+  color: #09afdf;
+  font-weight: 600;
+  position: absolute;
+  top: 5px;
+  right: 24%;
+}
+.right-info .game-name {
+  font-size: 20px;
+  float: left;
+  display: flex;
+  align-items: center;
+  height: 70px;
+  max-width: 50%;
+  text-align: left;
+}
+/* BUTTON 5 */
+
+button:hover, button:focus {
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+  animation: gelatine 0.5s 1;
+}
+.usloviabtn button.no-anim {
+  animation: none !important;
+}
+@keyframes gelatine {
+  from {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
+/*rozigrish*/
+.game-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px #9e99b2;
+}
+.screen-rozigrish .gamecard-row {
+  padding: 60px 0;
+}
+.img-wrap {
+  width: 40%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+}
+.img-wrap img {
+  height: 100%;
+}
+.info-wrap {
+  width: 60%;
+  min-height: 250px;
+  max-height: 250px;
+  background: white;
+  box-shadow: -10px 0 10px 10px white;
+  padding: 0 20px;
+}
+.info-wrap h3 {
+  font-size: 45px;
+  color: #0fb1e0;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.info-wrap p {
+  font-size: 27px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.uslovia {
+  font-size: 24px;
+  background-size: 30px;
+  padding-top: 2px;
+}
+.uslovia input {
+  width: 35px;
+  position: relative;
+  margin-right: 15px;
+  display: none;
+}
+.uslovia input:checked ~ .checkmark:after {
+  display: block;
+}
+.checkmark:after {
+  content: url(../images/check.png);
+  position: absolute;
+  display: none;
+  width: 35px;
+  height: 35px;
+  left: -8px;
+  top: -18px;
+}
+.check:after {
+  content: url(../images/check.png);
+  position: absolute;
+  display: block;
+  width: 35px;
+  height: 35px;
+  left: -8px;
+  top: -18px;
+}
+.uslovia label {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  cursor: pointer;
+  border: 1px solid #09afdf;
+  position: relative;
+  top: 8px;
+}
+.uslovia1 {
+}
+.usloviabtn input {
+  margin-right: 0;
+}
+.usloviabtn button {
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  background: #09afdf;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px #0786a9;
+  border: none;
+  height: 35px;
+  width: 65%;
+}
+.gamer-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+.gamer-img {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #0fb1e0;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.gamer-img img {
+  height: 100%;
+}
+.gamer-info {
+  width: 50%;
+  padding-left: 20px;
+}
+.gamer-name {
+  font-size: 16px;
+  font-weight: 600;
+}
+.gamez {
+  font-size: 16px;
+}
+.gamers {
+  margin-top: 25px;
+}
+.lost-gamers {
+  padding: 35px 0;
+}
+/*rozigrish end*/
+
+/*media*/
+@media screen and (min-width: 1600px) {
+  .game-name {
+    text-align: center;
+    font-size: 20px !important;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .game-wrap {
+    width: 60%;
+  }
+  .left-info {
+    width: 95%;
+    left: 60%;
+  }
+  .right-info {
+    width: 95%;
+    left: -55%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .gamer-name {
+    font-size: 12px !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  .game-wrap {
+    width: 80%;
+  }
+  .uslovia {
+    font-size: 16px;
+  }
+  .gamers2 {
+    margin-top: 0 !important;
+  }
+  .lg {
+    margin-left: 0;
+  }
+  .rg {
+    margin-right: 0;
+  }
+  .left-info {
+    width: 95%;
+    left: 55%;
+  }
+  .right-info {
+    width: 95%;
+    left: -50%;
+  }
+  .right-info .stavki-count {
+    font-size: 26px;
+    right: 30%;
+  }
+  .right-info .game-name {
+    font-size: 14px;
+  }
+  .left-info .stavki-count {
+    font-size: 26px;
+    left: -20px;
+  }
+  .left-info .game-name {
+    font-size: 14px;
+  }
+  .timer {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .game-wrap {
+    width: 60%;
+    margin: 30px auto;
+  }
+  .uslovia {
+    font-size: 18px;
+  }
+  .gamer-name {
+    font-size: 18px !important;
+  }
+  .gamer-img {
+    width: 20%;
+  }
+  .game-price {
+    left: 75%;
+  }
+  .game-name {
+    font-size: 25px;
+  }
+  .vs {
+    height: 200px !important;
+  }
+  .active-lottery.vs {
+    margin-top: 0;
+  }
+  .vs-row.active {
+    margin-top: 50px;
+  }
+  .left-info {
+    width: 95%;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 110%;
+    padding-left: 15px;
+  }
+  .right-info {
+    width: 95%;
+    right: 0;
+    left: 35px;
+    position: absolute;
+    top: -100px;
+    padding-right: 15px;
+  }
+  .left-info .stavok {
+    margin-left: -30px;
+  }
+  .right-info .stavki-count {
+    font-size: 32px;
+    letter-spacing: 0;
+    right: 55px;
+    top:10px;
+  }
+  .right-info .game-name {
+    font-size: 14px;
+  }
+  .left-info .stavki-count {
+    font-size: 32px;
+    letter-spacing: 0;
+    left: -20px;
+    top:10px;
+  }
+  .left-info .game-name {
+    font-size: 14px;
+  }
+  .right-info .block-check {
+    top: -35px!important;
+    left: 190px!important;
+    position: absolute!important;
+  }
+  .left-info .block-check{
+    top: 0px!important;
+
+  }
+  .left-info .block-check img, .right-info .block-check img {
+    transform: scale(0.5);
+  }
+  .timer {
+    width: 100%;
+  }
+
+}
+@media screen and (max-width: 620px) {
+  .game-card {
+    display: block;
+  }
+  .img-wrap {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+  }
+  .img-wrap img {
+    height: 110%;
+  }
+  .info-wrap {
+    margin-top: -10px;
+    width: 100%;
+    min-height: 250px;
+    max-height: 350px;
+    background: white;
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .game-wrap {
+    width: 100%;
+    margin: 30px auto;
+  }
+  .screen-rozigrish h1, .screen-rozigrish h2 {
+    font-size: 30px !important;
+    font-weight: 600;
+    padding: 0 7px;
+  }
+  .gamer-img {
+    width: 30%;
+  }
+  .img-inner img {
+    height: 125%;
+  }
+  .img-wrap {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+  }
+  .img-wrap img {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .img-inner img {
+    height: 100%;
+  }
+  .gamer-img {
+    width: 40%;
+  }
+  .uslovia {
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .usloviabtn button {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 330px) {
+  .gamer-img {
+    width: 50%;
+  }
+}
+.modal-open .page-wrapper {
+  filter: none !important;
+}
+#payModal [name="quantity"] {
+  margin-top: 8px;
+}
+#battle-cases,
+#lottery {
+  color: #000;
+}
+#battle-cases .flip-clock-wrapper ul li a div .shadow,
+#lottery .flip-clock-wrapper ul li a div .shadow {
+  z-index: 1;
+}
+#battle-cases .clock.flip-clock-wrapper,
+#lottery .clock.flip-clock-wrapper {
+  width: auto;
+  height: 100px;
+  margin: 0 auto;
+  display: inline-block;
+  transform: scale(0.8);
+}
+#battle-cases .flip-clock-label,
+#lottery .flip-clock-label {
+  display: none;
+}
+#battle-cases .user-participate,
+#battle-cases .winner-lottery {
+  box-shadow: 0 0 30px #177500;
+}
+#battle-cases .looser-lottery {
+  box-shadow: 0 0 30px #ca1111;
+}
+#payModal button:hover, #payModal button:focus {
+  animation: none;
+}
+.container.last-battle .right-info {
+  bottom: 40px;
+}
+.stavok, .left-info .game-name, .right-info .game-name, .saleinfo {
+  color: #797777
+}
+.accept-text {
+  margin-top: 35px;
+  font-family: PlayRegular, sans-serif;
+}
+/*
+How It Modal
+ */
+.how-it {
+  font-family: PlayBold;
+  color: #333333;
+}
+.how-it .modal-dialog {
+  width: 614px;
+}
+.how-it .modal-body {
+  text-align: center;
+}
+.how-it .modal-title {
+  text-align: center;
+  color: black;
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: PlayBold;
+}
+.how-it .modal-header {
+  background-color: transparent;
+  border-bottom: none;
+  text-align: center;
+}
+.how-it .modal-header .line {
+  background-color: #09afdf;
+  width: 500px;
+  height: 5px;
+  border-radius: 6px;
+  display: inline-block;
+}
+.how-it .modal-footer {
+  text-align: center;
+  border-top: none;
+}
+.how-it .button-ok-block {
+  display: inline-block;
+}
+.how-it .button-ok {
+  position: static;
+  width: 125px;
+  font-size: 22px;
+  cursor: pointer;
+  height: 40px;
+}
+.how-it .modal-body .list {
+  margin-top: 15px;
+}
+.how-it .modal-body .list span {
+  color: #09afdf;
+}
+.how-it .modal-body > span {
+  font-size: 26px;
+}
+.how-it .modal-body .list .text {
+  width: 100px;
+  display: inline-block;
+  margin-top: 95px;
+  position: absolute;
+  font-size: 18px;
+  line-height: 1;
+}
+.how-it .modal-body .item-1, .how-it .modal-body .item-2, .how-it .modal-body .item-3 {
+  display: inline-block;
+  height: 280px;
+  width: 150px;
+  margin-right: 40px;
+}
+.how-it .modal-body .item-3 {
+  margin-right: 0px
+}
+.how-it .modal-body .item-1 .text {
+  margin-left: -115px;
+}
+.how-it .modal-body .item-2 .text {
+  margin-left: -120px;
+}
+.how-it .modal-body .item-3 .text {
+  margin-left: -80px;
+}
+.how-it .modal-body .item-1:before {
+  margin-right: 45px;
+  content: url(../images/how-it-one.png);
+}
+.how-it .modal-body .item-2:before {
+  margin-right: 45px;
+  content: url(../images/how-it-two.png);
+}
+.how-it .modal-body .item-3:before {
+  content: url(../images/how-it-three.png);
+}
+.how-it .modal-body .item-1:after, .how-it .modal-body .item-2:after {
+  content: url(../images/how-it-arrow.png);
+  position: absolute;
+  top: 90px;
+}
+.how-it-button {
+  width: 40%;
+  font-size: 18px;
+  margin-bottom: 50px;
+  min-width: 180px;
+}
+@media (max-width: 600px) {
+  .how-it {
+    font-size: smaller !important;
+  }
+  .how-it .modal-body .item-1:after, .how-it .modal-body .item-2:after {
+    content: none;
+  }
+  .how-it .modal-dialog {
+    width: auto;
+  }
+  .how-it .modal-header .line {
+    width: 100%;
+  }
+  .how-it .modal-body .item-1:before, .how-it .modal-body .item-2:before, .how-it .modal-body .item-3:before {
+    margin-right: 0px;
+  }
+  .how-it .modal-body .item-1, .how-it .modal-body .item-2, .how-it .modal-body .item-3 {
+    margin-right: 0px;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .how-it .modal-body .item-1 .text, .how-it .modal-body .item-2 .text, .how-it .modal-body .item-3 .text {
+    position: static;
+    margin: 0;
+    width: 100%;
+  }
+}
+/*
+End How It Modal
+ */
+@media (max-width: 767px){
+  .screen1 {
+    margin-top: 51px;
+  }
+  .screen1 h1 {
+    padding: 0;
+  }
+}
+/*
+clock mobile
+*/
+@media (max-width: 480px){
+  .clock {
+    display: inline-flex!important;
+    transform: scale(0.55)!important;
+  }
+  .wrapper-clock {
+    display: flex;
+    justify-content: center;
+  }
+}
+.wrapper-clock {
+  height: 100px;
+}
+/*
+END clock mobile
+*/

@@ -1,0 +1,68 @@
+
+/* Дополнительные social icons buttons
+----------------------------------------------------------------------------- */
+
+.social-links.animated-effect-1 li.vk a:hover {
+  border-color: #2a5885;
+}
+
+.social-links:not(.animated-effect-1) li.vk a:hover,
+.colored.social-links li.vk a,
+.social-links.animated-effect-1 li.vk a:after,
+.btn.vk {
+  background-color: #2a5885;
+  border-color: #2a5885;
+  color: #ffffff;
+}
+
+/* Свой стиль для tabs
+----------------------------------------------------------------------------- */
+
+.nav-tabs.style-5 {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #09afdf;
+}
+
+.nav-tabs.style-5 > li > a {
+  color: #999999;
+}
+
+.nav-tabs.style-5 > li > a:hover {
+  color: #ffffff;
+  background-color: #09afdf !important;
+  border-color: #09afdf;
+  border-bottom-color: #09afdf !important;
+}
+
+.nav-tabs.style-5 > li > a:focus {
+  border-color: #09afdf;
+  background-color: #09afdf;
+}
+
+.nav-tabs.style-5 > li.active > a,
+.nav-tabs.style-5 > li.active > a:hover,
+.nav-tabs.style-5 > li.active > a:focus {
+  color: #ffffff;
+  cursor: default;
+  background-color: #09afdf;
+  border-color: #09afdf;
+  border-bottom-color: transparent;
+}
+
+
+
+.pt-10 {
+	padding-top: 10px;
+}
+
+.pt-0 {
+	padding-top: 0px;
+}
+
+.pr-0 {
+	padding-right: 0px;
+}
+
+.b-0 {
+	border: 0px;
+}

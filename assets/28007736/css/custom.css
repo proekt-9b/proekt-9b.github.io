@@ -1,0 +1,75 @@
+@media (max-width: 767px)  {
+    #header #navbar div.menu-button-phone {
+        background: none!important;
+        width: auto!important;
+        padding-left: 50px!important;
+        position: absolute!important;
+        bottom: 62px;
+        right: 15px;
+    }
+
+    .row-key-boxes-mobile:before {
+        display: block;
+        margin-top: -100px;
+    }
+
+    .promo-box-item-container-mobile {
+        margin-top: 68px;
+    }
+
+    .combo-box-slider ul.block-buttons-mobile {
+        margin: 0 auto 35px auto;
+    }
+
+    #work .work-step-item .work-step-icon:before {
+        width: 107px;
+        height: 107px;
+    }
+
+    #work .work-step-item .work-step-icon {
+        width: 95px;
+        height: 95px;
+    }
+
+    div .category-title-mobile {
+        font-size: 21px!important;
+    }
+}
+
+@media (max-width: 320px) {
+    .latest-wins-wrap {
+        height: 710px;
+    }
+}
+
+.price.blogger {
+    bottom: -5px;
+    left: 50%;
+    position: absolute !important;
+    margin-bottom: 0px !important;
+    margin-left: -57px !important;
+}
+
+.counter.blogger {
+    bottom: 25px;
+    left: 50%;
+    margin-left: -27px !important;
+    position: absolute !important;
+}
+
+.top-panel.blogger-1 {
+    background: url(https://wtfkeys.ru/assets/28007736/img/bloggers/1.png) no-repeat top center !important;
+}
+.top-panel.blogger-2 {
+    background: url(https://wtfkeys.ru/assets/28007736/img/bloggers/2.png) no-repeat top center !important;
+}
+.top-panel.blogger-3 {
+    background: url(https://wtfkeys.ru/assets/28007736/img/bloggers/3.png) no-repeat top center !important;
+}
+.top-panel.blogger-4 {
+    background: url(https://wtfkeys.ru/assets/28007736/img/bloggers/4.png) no-repeat top center !important;
+}
+
+.subscribe-community-text {
+    color:  #ff6c00;
+}

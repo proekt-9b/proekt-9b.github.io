@@ -1,0 +1,4 @@
+Host: https://wtfkeys.ru
+User-agent: *
+Disallow: /cabinet/
+Disallow: /pay/
